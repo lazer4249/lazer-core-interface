@@ -24,11 +24,15 @@ const AboutSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Profile Photo Placeholder */}
+          {/* Profile Photo */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
-              <div className="w-80 h-80 bg-gradient-secondary rounded-2xl border border-card-border tech-card flex items-center justify-center">
-                <User className="w-32 h-32 text-primary opacity-50" />
+              <div className="w-80 h-80 rounded-2xl border border-card-border tech-card overflow-hidden">
+                <img 
+                  src="/lovable-uploads/7f5dd335-daf1-4af8-a229-40ca3a605c08.png"
+                  alt="Lazer Maddala - AI & ML Engineer"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl" />
               <div className="absolute -inset-1 bg-gradient-primary opacity-20 rounded-2xl blur-sm -z-10" />
