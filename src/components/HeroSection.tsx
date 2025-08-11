@@ -54,7 +54,7 @@ const HeroSection = () => {
           
           {/* Role */}
           <h2 className="text-2xl md:text-4xl font-orbitron font-medium text-foreground">
-            Full-Stack Developer & AI Engineer
+            AI & ML Engineer
           </h2>
           
           {/* Tagline */}
