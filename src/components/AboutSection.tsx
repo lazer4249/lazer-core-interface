@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, GraduationCap, User } from "lucide-react";
+
 const AboutSection = () => {
   const handleDownloadResume = () => {
     // Create a placeholder resume download
@@ -11,7 +12,9 @@ const AboutSection = () => {
     link.click();
     document.body.removeChild(link);
   };
-  return <section id="about" className="py-20 px-4">
+
+  return (
+    <section id="about" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-orbitron font-bold neon-text-purple mb-4">
@@ -25,7 +28,11 @@ const AboutSection = () => {
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
               <div className="w-80 h-80 rounded-2xl border border-card-border tech-card overflow-hidden">
-                <img src="/lovable-uploads/7f5dd335-daf1-4af8-a229-40ca3a605c08.png" alt="Lazer Maddala - AI & ML Engineer" className="w-full h-full object-cover" />
+                <img 
+                  src="/lovable-uploads/7f5dd335-daf1-4af8-a229-40ca3a605c08.png"
+                  alt="Lazer Maddala - AI & ML Engineer"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl" />
               <div className="absolute -inset-1 bg-gradient-primary opacity-20 rounded-2xl blur-sm -z-10" />
@@ -39,8 +46,16 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-orbitron font-semibold neon-text-cyan mb-6">
                   Professional Summary
                 </h3>
-                <p className="text-lg font-montserrat text-muted-foreground leading-relaxed mb-6">"I am Lazer Maddala, a motivated and future-ready Computer Science undergraduate specializing in AI/ML, Data Science, and Cloud Technologies. Through multiple internships, certifications, and hands-on projects, I have developed strong expertise in building intelligent systems, deploying scalable solutions, and applying modern software development practices. My experience ranges from creating real-time AI voice assistants and AI-powered web applications to mastering cloud-based DevOps workflows. Known for adaptability, a continuous learning mindset, and a passion for solving complex problems, I aim to contribute to innovative, impact-driven teams where technology meets creativity.</p>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-montserrat" onClick={handleDownloadResume}>
+                <p className="text-lg font-montserrat text-muted-foreground leading-relaxed mb-6">
+                  Motivated and future-ready Computer Science graduate with practical experience in AI/ML, 
+                  Data Science, and Cloud Technologies through multiple internships and technical projects. 
+                  Known for adaptability, continuous learning, and a solution-oriented mindset.
+                </p>
+                <Button
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-montserrat"
+                  onClick={handleDownloadResume}
+                >
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </Button>
@@ -73,6 +88,8 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default AboutSection;
